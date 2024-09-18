@@ -326,3 +326,7 @@ const prompt=require('prompt-sync')()
 //     // return prev / current
 // })
 // console.log(arrreduce)
+
+// **************number datatype************
+let num=23
+console.log(isNaN(num))
