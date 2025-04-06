@@ -94,7 +94,7 @@
 //  console.log(concat)
 
 // **********to value from user *********
-const prompt=require('prompt-sync')()
+// const prompt=require('prompt-sync')()
 
 // const fname =prompt('enter your full name:')
    
@@ -328,5 +328,188 @@ const prompt=require('prompt-sync')()
 // console.log(arrreduce)
 
 // **************number datatype************
-let num=23
-console.log(isNaN(num))
+
+// BigInt
+// .toFixed
+// .toPrecision
+// .parseFloat
+// .parseInt
+
+// let num=34
+// console.log(isNaN(num))
+// const newnum=num.toString()
+// console.log(typeof(newnum))
+
+// let n=25633265732842656256534432675428898907
+// only contain 15 values but by using bigint we can get >15 digi values
+// let n2=BigInt(25633265732842656256534432675428898907)
+// console.log(n2)
+
+// let n=45.564009
+// let newn=n.toFixed(2) //.tofixed: how many digit you want after decimal(.) 
+// console.log(n)
+// console.log(newn)
+
+// let num= n.toPrecision(5)// .toprecision: how many to digit you want to  show
+// console.log(num)
+
+// *******js dates ****************
+
+// new Date ()
+// const date=new Date()
+// console.log(date)
+// console.log(typeof(date))
+// console.log(date.toDateString())//current date with day(waar eg mon tue)
+// console.log(date.toISOString())
+// console.log(date.toLocaleDateString())//   formate date/month/year
+// console.log(date.toTimeString())
+// console.log(date.toUTCString())
+
+// particular current time ya date (get)
+// console.log(date.getDate())
+// console.log(date.getMonth()+1)
+// console.log(date.getFullYear())
+// console.log(date.getDay())
+// console.log(date.getHours())
+// console.log(date.getMinutes())
+// console.log(date.getSeconds())
+// console.log(date.getTime())//millisesecond of all time of 1jan 1970 to current
+
+// console.log(date.getMilliseconds())
+
+//to set date of user to print
+// date.setDate(1)
+// date.setMonth(10)
+// date.setFullYear(2012)
+// console.log(date)
+
+//***********js math methods*****************/
+
+// console.log(Math.PI)
+// console.log(Math.SQRT1_2)
+// console.log(Math.round(33.52))//round figure
+// console.log(Math.floor(35.78))
+// console.log(Math.ceil(35.78))
+// console.log(Math.trunc(28.67))//only int part
+
+//**************scope***********************
+//range to access (kisi chij ka daira)
+// 3 type scope   
+// 1. BLOCK/LOCAL*imp
+// {} only work in this curly bracket(block)
+// let , const =block / local variable 
+// example:
+// {
+//    let a=5
+//     console.log(a)//access
+// }
+// console.log(a)//not access
+
+// 2.GLOBAL*imp
+// var=> GLOBALvariabal
+// {
+//     var a=5
+//      console.log(a)//access
+//  }
+//  console.log(a)// access
+
+// 3.FUNCTION
+
+
+//*****************hoisting*****************\
+// hoisting=>kisi chij top pr shift krna 
+// (hoisting) js ka bydefault nature hota h jo kuch func ya variable bnate h vo bydefault hoist(top pr jana)
+
+
+//***************clouser********************
+// closer=> inner function apne outer function se value ko access kr skte h 
+// jitne bhi child function h vo apne parent function ki value ko access kr skte h 
+
+// function outer(){
+//     let a = 'suhel'
+//     function inner() {
+//         let b='khan'
+//       console.log(a)  
+//       console.log(b)
+//     }
+//     inner()
+// }
+// outer()
+
+
+// ****************object*******************
+
+// object:store multiple value
+// {}obj define 
+// 1st method 
+// const stu={
+//     name:"suhel",
+//     roll_no:202,
+//     class:12,
+//     DOB:7
+// }
+  
+// console.log(stu);
+//to fetch particular item
+// 1st method 
+// console.log(stu.name)
+// console.log(stu.DOB)
+// console.log(stu.class)
+// console.log(stu.roll_no)
+
+
+// console.log('***************************************')
+// 2nd method
+
+
+// console.log(stu['name'])
+// console.log(stu['DOB'])
+// console.log(stu['class'])
+// console.log(stu['roll_no'])
+
+// {}Obj define
+// 2nd method
+
+// const stu={}
+// stu.name='suhel';
+// stu.rollno=48
+
+// console.log(stu)
+// console.log(stu['name'])
+
+// *****************************************
+
+// iife ----- immediate invoked function expression
+// (function add() {
+//     console.log("suhel")
+// })()
+
+
+// loop for string and array
+
+// const array=[1,2,3,4,5]
+// for (let i = 0; i<array.length; i++) {
+//     console.log(array[i])
+    
+// }
+
+// const str='jhashjaguegbrjcberugjhgfjshgfh'
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i]) 
+    
+// }
+
+// while loop
+// let i=0
+// while (i<=10) {
+//     console.log(i)
+//     i++
+// }
+
+//do while loop
+let j=0
+do {
+    console.log(j)
+    j++
+}
+while (j<=10)
